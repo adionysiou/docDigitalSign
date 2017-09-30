@@ -16,12 +16,30 @@ Compile using:
 -------------- 
 gcc docsign.c -o docsign -lcrypto -lm
 
-Execute on following  commands:
+Available actions to perform:
 -------------------------------
 - ./docsign : show help for all the available actions to perform.
 
 - ./docsign -createkeys : Create the private and public RSA keys and store them in two files called 'private_key' and 'public_key' in PEM  format.
 
-- ./docsign -s DOCUMENT : Sign the the document named DOCUMENT and store the signature in base64 format in file 'signature_64'.
+NOTE: If user does not have RSA keys in PEM format then this command MUST BE EXECUTED FIRST!.
+
+- ./docsign -s DOCUMENT : Sign the the document named DOCUMENT(using RSA private_key file) and store the signature in base64 format in file 'signature_64'.
+
+NOTE: In order for the program to work properly the 'private_key' file should be in the SAME directory with the program being executed.
 
 - ./docsign -v DOCUMENT signature_64 : Verify that DOCUMENT signature matches signature_64.
+
+NOTE: In order for the program to work properly the 'public_key' files should be in the SAME directory with the program being executed.
+
+Authors:
+--------
+Antreas Dionysiou
+
+License:
+--------
+Please see LICENSE.md file for details
+
+General Notes:
+--------------
+Please feel free to use our program for signing and verifying your documents as this is an open source software. 
