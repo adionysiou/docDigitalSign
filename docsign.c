@@ -2,7 +2,15 @@
 This program is implemented for digital signing and verifying of documents.
 This ensures that a file is last edited and signed by the proper author.
 
-Compile using: gcc docsign.c -o docsign -lcrypto -lm
+Compile using:
+-------------- 
+gcc docsign.c -o docsign -lcrypto -lm
+
+Execute using: (show help with: ./docsign )
+--------------
+First create keys with: ./docsign -createkeys
+Then sign a document with: ./docsign -s DOCUMENT
+Finally verify signature with: ./docsign -v DOCUMENT signature_64
 
 Author: Antreas Dionysiou
 Date created: 20/7/2017
