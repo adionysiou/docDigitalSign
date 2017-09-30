@@ -22,11 +22,11 @@ Available actions to perform:
 
 - ./docsign -createkeys : Create the private and public RSA keys and store them in two files called 'private_key' and 'public_key' in PEM  format.
 
-NOTE: If user does not have RSA keys in PEM format then this command MUST BE EXECUTED FIRST!.
+ NOTE: If user does not have RSA keys in PEM format then this command MUST BE EXECUTED FIRST!.
 
 - ./docsign -s DOCUMENT : Sign the the document named DOCUMENT(using RSA private_key file) and store the signature in base64 format in file 'signature_64'.
 
-NOTE: In order for the program to work properly the 'private_key' file should be in the SAME directory with the program being executed.
+ NOTE: In order for the program to work properly the 'private_key' file should be in the SAME directory with the program being executed.
 
 - ./docsign -v DOCUMENT signature_64 : Verify that DOCUMENT signature matches signature_64.
 
