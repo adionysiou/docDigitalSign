@@ -43,3 +43,4 @@ Please see LICENSE.md file for details
 General Notes:
 --------------
 Please feel free to use our program for signing and verifying your documents as this is an open source software. 
+Document and Document1 are sample files for testing purposes.
